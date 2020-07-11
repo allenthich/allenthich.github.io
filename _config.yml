@@ -21,16 +21,39 @@
 title: Allen Thich
 email: allenthich@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I like code, surprise rabbit hole errors, and vegetable crisps.
+  I like code, surprise rabbit hole errors, and Sonoma Snacks' vegetable crisps.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://allenthich.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  allenthich
+repository: allenthich/allenthich.github.io
 
 # Build settings
-theme: jekyll-theme-minimal
+theme: minima
 plugins:
   - jekyll-feed
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    twitter: jekyllrb
+    github:  allenthich
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # linkedin: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
 
 # Exclude from processing.
 # The following items will not be processed, by default.
