@@ -8,11 +8,9 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 @import "layout";
+@import "header";
+@import "foundation_override";
 
-
-.site-nav {
-  position: initial;
-}
 // --------------------------------------------------
 // APP.SCSS
 // --------------------------------------------------

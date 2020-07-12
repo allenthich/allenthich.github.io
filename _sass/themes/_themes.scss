@@ -1,5 +1,27 @@
-// https://jekyllrb.com/docs/themes/
+/**
+ * Minima Theme specific styles (https://jekyllrb.com/docs/themes/)
+ */
 
-.svg-icon {
+/**
+ * Wrapper
+ */
+.wrapper {
+  // max-width: none;
+}
+
+/**
+ * Icons
+ */
+ .svg-icon {
   box-sizing: initial;
+}
+
+
+/**
+ * Layout: Site header
+ */
+.site-nav {
+  text-align: center;
+  position: initial;
+  float: none;
 }

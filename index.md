@@ -12,3 +12,5 @@ order: 2
 ---
 
 Welcome home!
+
+![Grey cat performing a face plank in a compact manner](https://avatars0.githubusercontent.com/u/52936673?s=460&u=9bb1ce4a1eb4740be9c19b511127065d93164c85&v=4)
