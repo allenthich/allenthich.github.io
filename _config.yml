@@ -38,14 +38,14 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: jekyllrb
+    # twitter: jekyllrb
     github:  allenthich
     # devto: jekyll
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    # linkedin: jekyll
+    linkedin: allenthich
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
@@ -76,4 +76,5 @@ minima:
 #   - vendor/ruby/
 
 sass:
+  sass_dir: _sass
   style: compact # possible values: nested expanded compact compressed
