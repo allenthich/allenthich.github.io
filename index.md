@@ -8,7 +8,7 @@
 layout: home
 title: Home
 permalink: /
-order: 2
+# order: 2
 ---
 
 Welcome home!

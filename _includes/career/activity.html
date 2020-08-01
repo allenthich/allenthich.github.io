@@ -1,0 +1,58 @@
+<!-- Begin Activity -->
+<div class="cell activity-selection">
+  <div class="grid-x grid-padding-x align-justify">
+    <div class="cell medium-6">
+      <select id="period-select" v-model="timePeriod" v-on:change="updateActivityCharts">
+        <option value="-1">All Time</option>
+        <option v-for="(details, index) in experience.progression.statistics" v-bind:value="index">
+          ${details.year}
+        </option>
+      </select>
+    </div>
+    <div class="cell medium-6">
+      <select id="contribution-select" v-model="contributionType" v-on:change="updateActivityCharts">
+        <option v-bind:value="contributionEnum.COMMIT">Contributions by Commit</option>
+        <option v-bind:value="contributionEnum.PULL_REQUEST">Contributions by Pull Request</option>
+        <option v-bind:value="contributionEnum.REVIEW">Contributions by Review</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Activity Charts -->
+  <div class="grid-x grid-padding-x" id="activity-charts">
+    <!-- Pull Requests/Commits -->
+    <div class="cell activity-charts-title">${contributionText}</div>
+    <div class="grid-x grid-padding-x cell medium-6">
+      <!-- AB Testing -->
+      <div class="cell small-4">
+        <div class="grid-x chart-container">
+          <canvas id="activityChart0" width="50" height="100" style="border: 1px solid black;"></canvas>
+        </div>
+        <div class="text-center">${contributions.testing}</div>
+      </div>
+      <!-- Site Content -->
+      <div class="cell small-4">
+        <div class="grid-x chart-container">
+          <canvas id="activityChart1" width="50" height="100" style="border: 1px solid black;"></canvas>
+        </div>
+        <div class="text-center">${contributions.site}</div>
+      </div>
+      <!-- Email Content -->
+      <div class="cell small-4">
+        <div class="grid-x chart-container">
+          <canvas id="activityChart2" width="50" height="100" style="border: 1px solid black;"></canvas>
+        </div>
+        <div class="text-center">${contributions.email}</div>
+      </div>
+    </div>
+    <!-- TODO: Activity Donut -->
+  </div>
+
+  <div class="grid-x grid-padding-x">
+    <div class="cell">
+      <p><i>These figures are based solely on personal opinion and are purely estimations.</i></p>
+      <i>Last Updated: July 26, 2020</i>
+    </div>
+  </div>
+</div>
+<!-- End Activity -->

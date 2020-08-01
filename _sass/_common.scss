@@ -1,0 +1,31 @@
+.bt-white {
+  border-top: 1px solid white;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:100:300:400:500:700:900|Open+Sans:300:400:600:700:800);
+// @import url(https://fonts.googleapis.com/css?family=Noto+Sans+JP:100:300:400:500:700:900|Open+Sans:300:400:600:700:800|Noto+Sans+SC:700|Noto+Sans+TC:700|&display=swap&subset=chinese-hongkong,chinese-simplified,chinese-traditional,cyrillic,japanese,korean,thai,vietnamese);
+
+.os-font {
+  font-family: "Open Sans";
+}
+
+.ns-font {
+  font-family: "Noto Sans JP";
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}

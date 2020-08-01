@@ -1,0 +1,56 @@
+<!-- Career Tabs -->
+<ul class="tabs grid-x" data-tabs id="career-tabs">
+  {% for experience in site.data.career %}
+    <li class="tabs-title text {% if forloop.first %}is-active{% endif %}">
+      <a href="#panel{{ forloop.index }}" 
+        {% if forloop.first %} aria-selected="true" {% endif %}
+        {% unless forloop.first %}data-tabs-target="panel{{ forloop.index }}" {% endunless %}
+        v-on:click="updateExperienceData"
+      >
+        {{- experience.name.short -}}
+      </a>
+    </li>
+  {% endfor %}  
+</ul>
+
+<!-- Career Content -->
+<div class="tabs-panel grid-x is-active">
+  {% include career/heading.html %}
+
+  <!-- Begin Middle Content -->
+  <div class="cell grid-x grid-margin-x">
+    <!-- Begin Left/Column 1 Content -->
+    {% include career/contributions.html %}
+    <!-- End Left/Column 1 Content -->
+
+    <!-- Begin Right/Column 2 -->
+    <div class="card cell medium-6">
+      <!-- Begin Statistics Tabs -->
+      <ul class="tabs grid-x" data-tabs id="statistics-tabs">
+        <li class="tabs-title text is-active">
+          <a href="#panel-statistics-1" aria-selected="true">Usage</a>
+        </li>
+        <li class="tabs-title text">
+          <a href="#panel-statistics-2">Activity</a>
+        </li>
+        <li class="tabs-title text">
+          <a href="#panel-statistics-3">Statistics</a>
+        </li>
+      </ul>
+
+      <div class="tabs-content grid-x" data-tabs-content="statistics-tabs">
+        <div class="tabs-panel grid-x is-active" id="panel-statistics-1">
+          {% include career/usage.html %}
+        </div>
+        <div class="tabs-panel grid-x" id="panel-statistics-2">
+          {% include career/activity.html %}
+        </div>
+        <div class="tabs-panel grid-x" id="panel-statistics-3">
+          {% include career/statistics.html %}
+        </div>
+      </div>
+    </div>
+    <!-- End Right/Column 2 -->
+  </div>
+  <!-- End Middle Content -->
+</div>

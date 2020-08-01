@@ -4,7 +4,108 @@ Headers:
 
 Career
     Education
+    Technologies used/usage bars
+    Statistics:
+// Technology Usage:
+// Achievements:
+// Favorite memory
 
 Statistics
     Level
 Timeline
+
+Put music I've listened to during the month into data
+
+Card ideas
+    Top 5 music
+    5 Cat face down images
+
+Group JSON career data using organization and position?
+
+Going to need some kind of JSON visualizer and updating tool
+
+[
+    {
+        "year": 2019,
+        "pullRequests": {
+            "totalCreated": 15,
+            "totalTesting": 15,
+            "totalContent": 0,
+            "commits: {
+                "testing": 200,
+                "content": 0,
+            }
+        },
+        "commits": {
+            "total": 363,
+            "testing": 175,
+            "content": 188,
+        },
+        "reviews": {
+            "total": 3
+        },
+        "activity": {
+            "pullRequests": 4,
+            "reviews": 1,
+            "commits": 95
+        },
+    },
+    {
+        "year": 2020,
+        "pullRequests": {
+            "totalCreated": 13,
+            "totalTesting": 7,
+            "totalContent": 6,
+            "commits: {
+                "testing": 135,
+                "content": 62,
+            }
+        },
+        "commits": {
+            "total": 373,
+            "testing": 190,
+            "content": 183,
+        },
+        "reviews": {
+            "total": 12
+        },
+        "activity": {
+            "pullRequests": 4,
+            "reviews": 2,
+            "commits": 94
+        },
+    },
+]
+
+2019 Total AB test PRs 15
+2019 Total AB test PR Commits 220
+2019 Total Non-PR Commits 363
+    AB test commits 175
+    Site/Email commits 188
+2019 3 PR reviews
+----------------------------------
+2020 Total PRs made 13
+    AB Test PR 7
+        135 commits
+    Site/Build system PRs 6
+        62 commits
+
+2020 Total Non PR commits
+    AB tests 190
+    Site/Email 183
+
+2020 12 PR reviews
+
+TB
+    Commits
+    Pull Requests
+    Reviews
+    Issues?
+ALEKS
+    Items
+    Reviews
+    Issues
+PORTAL
+
+BPS
+    Total Projects Worked on

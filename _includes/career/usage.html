@@ -1,0 +1,54 @@
+<!-- Include last updated and time metric -->
+<!-- Begin Usage -->
+<div class="cell">
+  <table class="h100">
+    <tbody>
+      <!-- Languages / Technologies (AKA Frameworks & Libraries) -->
+      <tr v-for="(categoryName, category) in {
+          'Languages': 'languages', 
+          'Frameworks & Libraries': 'technologies'
+        }"
+      >
+        <td>
+          ${category}
+          <span class="progress-bar">
+            <!-- Begin progress bar -->
+            <span
+              class="progress-section"
+              v-for="section in experience[categoryName]"
+              v-bind:aria-label="section.name + section.percentage"
+              v-bind:style="{ 'width': section.percentage, 'background-color': section.color }"
+            >
+            </span>
+            <!-- End progress bar -->
+          </span>
+          <ul class="list-style-none">
+            <!-- Begin progress bar label -->
+            <li
+              class="inline"
+              v-for="section in experience[categoryName]"
+            >
+              <div class="inline-flex mr2 align-middle os-font">
+                <svg
+                  class="mr-8"
+                  v-bind:style="{'fill': section.color }"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  width="16"
+                  height="16"
+                  aria-hidden="true"
+                >
+                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path>
+                </svg>
+                <span class="text-gray-dark text-bold mr-4">${section.name}</span>
+                <span>${section.percentage}</span>
+              </div>
+            </li>
+            <!-- End progress bar label -->
+          </ul>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- End Usage -->

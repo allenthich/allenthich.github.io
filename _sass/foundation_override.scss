@@ -5,17 +5,21 @@
 
 .menu .active > a {
   background: inherit;
-  color: whitesmoke;
+  color: black;
 }
 
-@keyframes setActiveHeader {
-  0% {
-    background-size: 0% 100%;
-  }
-  100% {
-    background-size: 100% 100%;
-  }
+a:visited {
+  color: black;
 }
+
+// @keyframes setActiveHeader {
+//   0% {
+//     background-size: 0% 100%;
+//   }
+//   100% {
+//     background-size: 100% 100%;
+//   }
+// }
 
 .menu > li {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -35,32 +39,62 @@
     }
   }
 
-  &.home-anchor, &:last-child {
+  &.home-anchor {
     margin-right: auto;
   }
 
-  &:not(.home-anchor) {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    background-image: linear-gradient(rgba(66, 66, 66, 1), rgba(66, 66, 66, 1));
+//   &:not(.home-anchor) {
+//     background-position: 50% 50%;
+//     background-repeat: no-repeat;
+//     background-size: 0% 100%;
+//     background-image: linear-gradient(rgba(66, 66, 66, 1), rgba(66, 66, 66, 1));
 
-    &.active {
-      animation:  0.25s ease-out 0s 1 setActiveHeader;
-      background-size: 100% 100%;
-      color: white;
-      border-bottom: 2px solid rgba(66, 66, 66, 1);
-    }
-    &:hover {
-      border-bottom: 2px solid rgba(66, 66, 66, 1);
+//     &.active {
+//       animation:  0.25s ease-out 0s 1 setActiveHeader;
+//       background-size: 100% 100%;
+//       color: white;
+//       border-bottom: 2px solid rgba(66, 66, 66, 1);
+//     }
+//     &:hover {
+//       border-bottom: 2px solid rgba(66, 66, 66, 1);
   
-      a {
-        // color: red;
-      }
-    }
-  }
+//       a {
+//         // color: red;
+//       }
+//     }
+//   }
 }
 
 .lang-tgl {
   padding: 0 0.5em;
+}
+
+/*
+ * Tabs
+ */
+ .tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+  background: initial;
+  color: black;
+ }
+
+ .tabs-title {
+   text-transform: uppercase;
+ }
+
+ .tabs-panel {
+   &.is-active {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+}
+.post-content h1, .post-content h2, .post-content h3 {
+  margin-top: 0px;
 }

@@ -4,15 +4,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <!-- <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" /> -->
+  <link rel="stylesheet" href="/assets/css/foundation/foundation.css">
+  <link rel="stylesheet" href="/assets/css/foundation-icons/foundation-icons.css">
   <link rel="stylesheet" href="{{ "/assets/css/app.css?v=" | append: site.github.build_revision | relative_url }}">
+  <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
 
   {%- include custom-head.html -%}
+
+
   
+  <script>var globalCareer = {{ site.data.career | jsonify }};</script>
   <script type="text/javascript" src="/assets/js/vendor.js"></script>
   <script type="text/javascript" src="/assets/js/foundation.js"></script>
-  <script type="text/javascript" src="/assets/js/app.js"></script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js"></script>
+  
+  <script type="module" src="/assets/js/app.js"></script>
+  <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
 </head>

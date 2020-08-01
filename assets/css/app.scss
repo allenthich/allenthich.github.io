@@ -4,11 +4,11 @@
 ---
 
 @import
-  "foundation/foundation",
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 @import "layout";
 @import "header";
+@import "common";
 @import "foundation_override";
 
 // --------------------------------------------------

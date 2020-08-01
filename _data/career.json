@@ -1,0 +1,600 @@
+[
+  {
+    "name": {
+      "isLengthy": false,
+      "short": "Tailored Brands",
+      "full": "Tailored Brands, Inc.",
+      "sections": [
+        "Tailored Brands, Inc."
+      ]
+    },
+    "website": "https://www.tailoredbrands.com/",
+    "location": "Fremont, California",
+    "industry": "Apparel & Fashion",
+    "department": "E-commerce",
+    "isInternship": false,
+    "timePeriod": "July 2019 - Present",
+    "duration": "1 yr 1 mo",
+    "role": "Front End Web Developer",
+    "contributions": [
+      "Develop A/B test experiences that range from simple UI changes to the additions of new features",
+      "Translate wireframe designs into responsive site and email web content",
+      "Integrate unit testing framework Jest into the Gulp build system to reduce the number of bugs",
+      "Refactor build system entry point and CLI interaction to scale for the creation of new tasks",
+      "Build XLSX to JSON data ingestion workflow into the build system to minimize latency between teams"
+    ],
+    "languages": [
+      {
+        "name": "JavaScript",
+        "color": "#f1e05a",
+        "percentage": "80%"
+      },
+      {
+        "name": "HTML",
+        "color": "#e34c26",
+        "percentage": "12%"
+      },
+      {
+        "name": "CSS",
+        "color": "#563d7c",
+        "percentage": "8%"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "jQuery",
+        "detail": "JavaScript library",
+        "color": "#0769ad",
+        "percentage": "71%"
+      },
+      {
+        "name": "Gulp.js",
+        "detail": "Toolkit to automate & enhance workflows",
+        "color": "#cf4647",
+        "percentage": "14%"
+      },
+      {
+        "name": "Pug.js",
+        "detail": "Feature-rich templating engine",
+        "color": "#a86454",
+        "percentage": "8%"
+      },
+      {
+        "name": "Jest",
+        "detail": "JavaScript testing framework",
+        "color": "#15c213",
+        "percentage": "7%"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Chrome Dev Tools"
+      }
+    ],
+    "progression": {
+      "overall": [
+        {
+          "name": "Total AB tests written",
+          "value": 24
+        },
+        {
+          "name": "Total contributions",
+          "value": 848
+        },
+        {
+          "name": "Total pull requests reviewed",
+          "value": 15
+        }
+      ],
+      "statistics": [
+        {
+          "year": 2020,
+          "categories": [
+            {
+              "name": "pullRequest",
+              "verb": " pull requests merged",
+              "total": 13,
+              "types": [
+                {
+                  "name": "A/B Testing",
+                  "total": 7,
+                  "totalCommits": 135
+                },
+                {
+                  "name": "Site Content",
+                  "total": 6,
+                  "totalCommits": 62
+                },
+                {
+                  "name": "Email Content",
+                  "total": 0,
+                  "totalCommits": 0
+                }
+              ]
+            }
+          ],
+          "pullRequests": {
+            "name": "pullRequest",
+            "verb": " pull requests merged",
+            "total": 13,
+            "types": [
+              {
+                "name": "testing",
+                "total": 7,
+                "totalCommits": 135
+              },
+              {
+                "name": "site",
+                "total": 6,
+                "totalCommits": 62
+              },
+              {
+                "name": "email",
+                "total": 0,
+                "totalCommits": 0
+              }
+            ]
+          },
+          "commits": {
+            "total": 373,
+            "types": [
+              {
+                "name": "testing",
+                "total": 190
+              },
+              {
+                "name": "site",
+                "total": 153
+              },
+              {
+                "name": "email",
+                "total": 30
+              }
+            ]
+          },
+          "reviews": {
+            "total": 11,
+            "types": [
+              {
+                "name": "testing",
+                "total": 5
+              },
+              {
+                "name": "site",
+                "total": 6
+              },
+              {
+                "name": "email",
+                "total": 0
+              }
+            ]
+          },
+          "activity": {
+            "pullRequests": 4,
+            "reviews": 2,
+            "commits": 94
+          }
+        },
+        {
+          "year": 2019,
+          "pullRequests": {
+            "total": 15,
+            "types": [
+              {
+                "name": "testing",
+                "total": 15,
+                "totalCommits": 200
+              },
+              {
+                "name": "site",
+                "total": 0,
+                "totalCommits": 0
+              },
+              {
+                "name": "email",
+                "total": 0,
+                "totalCommits": 0
+              }
+            ]
+          },
+          "commits": {
+            "total": 475,
+            "types": [
+              {
+                "name": "testing",
+                "total": 200
+              },
+              {
+                "name": "site",
+                "total": 39
+              },
+              {
+                "name": "email",
+                "total": 236
+              }
+            ]
+          },
+          "reviews": {
+            "total": 4,
+            "types": [
+              {
+                "name": "testing",
+                "total": 4
+              },
+              {
+                "name": "site",
+                "total": 0
+              },
+              {
+                "name": "email",
+                "total": 0
+              }
+            ]
+          },
+          "activity": {
+            "pullRequests": 4,
+            "reviews": 1,
+            "commits": 95
+          }
+        }
+      ]
+    },
+    "favoriteMemory": "Summer days with volleyball and ice cream cones."
+  },
+  {
+    "name": {
+      "isLengthy": true,
+      "short": "ALEKS Corporation",
+      "full": "McGraw-Hill Education - ALEKS Corporation",
+      "sections": [
+        "McGraw-Hill Education",
+        "ALEKS Corporation"
+      ]
+    },
+    "website": "https://www.aleks.com/",
+    "location": "Irvine, California",
+    "industry": "E-learning",
+    "department": "Content",
+    "isInternship": false,
+    "timePeriod": "June 2016 - December 2018",
+    "duration": "2 yrs 7 mos",
+    "role": "Content Programmer",
+    "contributions": [
+      "Achieved proficiency using an XML/PHP based proprietary template language, ISL, to develop educational lessons",
+      "Improved visual debugging and new hire onboarding by creating a syntax definition for ISL to use in Sublime Text",
+      "Automated manual updating of 26 hexadecimal color codes across 75+ lessons by writing a Shell script",
+      "Reduced an average of 5 defects while performing code reviews mindful of best practices, accessibility, and localization",
+      "Drove critical decisions for content architects by rapidly prototyping design changes",
+      "Resolved issues within day of discovery by directly communicating with quality control and translators",
+      "Created global utility functions to enable code reuse and style consistency"
+    ],
+    "languages": [
+      {
+        "name": "HTML",
+        "color": "#e34c26",
+        "percentage": "62.9%"
+      },
+      {
+        "name": "JavaScript",
+        "color": "#f1e05a",
+        "percentage": "24%"
+      },
+      {
+        "name": "CSS",
+        "color": "#563d7c",
+        "percentage": "14%"
+      },
+      {
+        "name": "Shell",
+        "color": "#89e051",
+        "percentage": "0.1%"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Item Specification Language",
+        "detail": "Templating language",
+        "color": "#1E417B",
+        "percentage": "100%"
+      }
+    ],
+    "progression": {
+      "overall": [
+        {
+          "name": "Total educational lessons written",
+          "value": 594
+        },
+        {
+          "name": "Total issues reported",
+          "value": 217
+        },
+        {
+          "name": "Total code reviews performed",
+          "value": 732
+        }
+      ],
+      "statistics": [
+        {
+          "year": 2018,
+          "lessons": {
+            "total": 140,
+            "types": [
+              {
+                "name": "testing",
+                "total": 0,
+                "totalCommits": 0
+              }
+            ]
+          },
+          "issues": {
+            "total": 70,
+            "types": [
+              {
+                "name": "testing",
+                "total": 70
+              }
+            ]
+          },
+          "reviews": {
+            "total": 280,
+            "types": [
+              {
+                "name": "testing",
+                "total": 280
+              }
+            ]
+          },
+          "activity": {
+            "lessons": 4,
+            "reviews": 2,
+            "issues": 94
+          }
+        },
+        {
+          "year": 2017,
+          "lessons": {
+            "total": 286,
+            "types": [
+              {
+                "name": "testing",
+                "total": 0,
+                "totalissues": 286
+              }
+            ]
+          },
+          "issues": {
+            "total": 91,
+            "types": [
+              {
+                "name": "testing",
+                "total": 91
+              }
+            ]
+          },
+          "reviews": {
+            "total": 312,
+            "types": [
+              {
+                "name": "testing",
+                "total": 312
+              }
+            ]
+          },
+          "activity": {
+            "lessons": 4,
+            "reviews": 2,
+            "issues": 94
+          }
+        },
+        {
+          "year": 2016,
+          "lessons": {
+            "total": 168,
+            "types": [
+              {
+                "name": "testing",
+                "total": 7,
+                "totalissues": 168
+              }
+            ]
+          },
+          "issues": {
+            "total": 56,
+            "types": [
+              {
+                "name": "testing",
+                "total": 56
+              }
+            ]
+          },
+          "reviews": {
+            "total": 140,
+            "types": [
+              {
+                "name": "testing",
+                "total": 140
+              }
+            ]
+          },
+          "activity": {
+            "lessons": 4,
+            "reviews": 2,
+            "issues": 94
+          }
+        }
+      ]
+    },
+    "favoriteMemory": "Our cubicle aisle of young fresh university graduates. I was surrounded by close friends. We took the task to make the world better, one educational lesson at a time."
+  },
+  {
+    "name": {
+      "isLengthy": true,
+      "short": "The Portal",
+      "full": "The Portal by the Beall Family Foundation and K5 Ventures",
+      "sections": [
+        "The Portal by the",
+        "Beall Family Foundation and",
+        "K5 Ventures"
+      ]
+    },
+    "website": "https://theportal.io/",
+    "location": "Irvine, California",
+    "industry": "Information Technology & Services",
+    "department": "",
+    "isInternship": true,
+    "timePeriod": "June 2015 – December 2015",
+    "duration": "7 mos",
+    "role": "Team Lead Developer",
+    "contributions": [
+      "Mentored a team of 3 interns to develop and deliver web applications for small business clients",
+      "Released a mobile evacuation application built using Meteor.js and Cordova Plugins",
+      "Increased productivity of the team by automating the build process to deploy on AWS Elastic Beanstalk",
+      "Worked with a UX/UI Designer to transform specification into product",
+      "Led team's weekly goals and objectives to ensure project checkpoints were met"
+    ],
+    "languages": [
+      {
+        "name": "JavaScript",
+        "color": "#f1e05a",
+        "percentage": "71%"
+      },
+      {
+        "name": "HTML",
+        "color": "#e34c26",
+        "percentage": "21%"
+      },
+      {
+        "name": "CSS",
+        "color": "#563d7c",
+        "percentage": "8%"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "MeteorJS",
+        "detail": "JavaScript framework",
+        "color": "#ff6a3e",
+        "percentage": "95%"
+      },
+      {
+      "name": "Apache Cordova",
+        "detail": "JavaScript interface to native components",
+        "color": "#4CC2E4",
+        "percentage": "5%"
+      }
+    ],
+    "tools": [
+      {
+        "name": "AWS Elastic Beanstalk"
+      }
+    ],
+    "progression": {
+      "overall": [
+        {
+          "name": "Total projects worked on",
+          "value": 0
+        },
+        {
+          "name": "Total ",
+          "value": 0
+        },
+        {
+          "name": "Total ",
+          "value": 0
+        }
+      ],
+      "statistics": []
+    },
+    "favoriteMemory": "A learning hub of eccentric characters fulfilling a shared endeavor. Another island workstation of intelligent and kind team members. We came there during our university free periods to learn and deliver."
+  },
+  {
+    "name": {
+      "isLengthy": true,
+      "short": "Blue Panda Labs",
+      "full": "Blue Panda Labs",
+      "sections": [
+        "Blue Panda Labs"
+      ]
+    },
+    "website": "http://www.bluepandalabs.com/",
+    "location": "Irvine, California",
+    "industry": "Computer Software",
+    "department": "",
+    "isInternship": true,
+    "timePeriod": "June 2016 - December 2018",
+    "duration": "1 yr 1 mo",
+    "role": "MEAN Stack Developer",
+    "contributions": [
+      "Built a RESTful API using the MEAN stack and successfully integrated with the client's iOS app",
+      "Created responsive desktop and mobile web pages using the Bootstrap 3 and Less.js libraries",
+      "Implemented an efficient schedule availability algorithm utilizing the Google Calendar API"
+    ],
+    "languages": [
+      {
+        "name": "HTML",
+        "color": "#e34c26",
+        "percentage": "41%"
+      },
+      {
+        "name": "JavaScript",
+        "color": "#f1e05a",
+        "percentage": "30%"
+      },
+      {
+        "name": "CSS",
+        "color": "#563d7c",
+        "percentage": "29%"
+      }
+    ],
+    "technologies": [
+      {
+        "name": "Express.js",
+        "detail": "Node.js web application framework",
+        "color": "#353535",
+        "percentage": "34%"
+      },
+      {
+        "name": "AngularJS",
+        "detail": "JavaScript MVW Framework",
+        "color": "#a6120d",
+        "percentage": "31%"
+      },
+      {
+        "name": "MongoDB",
+        "detail": "NoSQL database",
+        "color": "#13aa52",
+        "percentage": "27%"
+      },
+      {
+        "name": "Bootstrap",
+        "detail": "CSS framework",
+        "color": "#7952b3",
+        "percentage": "4%"
+      },
+      {
+        "name": "Less.js",
+        "detail": "Dynamic preprocessor stylesheet language",
+        "color": "#1d365d",
+        "percentage": "4%"
+      }
+    ],
+    "progression": {
+      "overall": [
+        {
+          "name": "Total projects worked on",
+          "value": 0
+        },
+        {
+          "name": "Total ",
+          "value": 0
+        },
+        {
+          "name": "Total ",
+          "value": 0
+        }
+      ],
+      "statistics": []
+    },
+    "favoriteMemory": "Bright sunny summer days. 5 developers compacted into a single room of a rustic house. Monitors propped on our single island workstation. AC on blast. Exciting curiosity."
+  }
+]

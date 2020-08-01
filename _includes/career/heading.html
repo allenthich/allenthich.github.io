@@ -1,0 +1,28 @@
+<!-- Begin Heading -->
+<div class="cell grid-x align-center-middle grid-padding-y">
+  <div class="cell medium-6">
+    <h1>
+      <a v-bind:href="experience.website">
+        <span class="cell grid-x upcase bold os-font">
+          <!-- Check if array -->
+          <template v-if="experience.name.isLengthy">
+            <span class="cell" v-for="section in experience.name.sections">${section}</span>
+          </template>
+          <template v-else>${experience.name.full}</template>
+        </span>
+      </a>
+    </h1>
+    <p class="subhead">// LOCATION</p>
+    <p class="upcase ns-font">${experience.location}</p>
+  </div>
+  <div class="cell medium-6">
+    <p class="subhead">// ROLE</p>
+    <h2 class="upcase ns-font">${experience.role}</h2>
+    <p class="subhead">// PERIOD</p>
+    <p class="upcase ns-font">${experience.timePeriod}</p>
+    <!-- Move Duration into Statistics -->
+    <!-- <p>// DURATION</p>
+    <p><i class="fi-clock"></i>{{ experience.duration }}</p> -->
+  </div>
+</div>
+<!-- End Heading -->
