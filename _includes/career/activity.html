@@ -4,16 +4,16 @@
     <div class="cell medium-6">
       <select id="period-select" v-model="timePeriod" v-on:change="updateActivityCharts">
         <option value="-1">All Time</option>
-        <option v-for="(details, index) in experience.progression.statistics" v-bind:value="index">
+        <option v-for="(details, index) in experience.progression.contributions" v-bind:value="index">
           ${details.year}
         </option>
       </select>
     </div>
     <div class="cell medium-6">
       <select id="contribution-select" v-model="contributionType" v-on:change="updateActivityCharts">
-        <option v-bind:value="contributionEnum.COMMIT">Contributions by Commit</option>
-        <option v-bind:value="contributionEnum.PULL_REQUEST">Contributions by Pull Request</option>
-        <option v-bind:value="contributionEnum.REVIEW">Contributions by Review</option>
+        <option v-for="(type, index) in contributionTypes" v-bind:value="type">
+          Contributions${contributionTypes.length > 1 ? ' by ' + getContributionTypeDisplayName(type) : ''}
+        </option>
       </select>
     </div>
   </div>
@@ -21,36 +21,51 @@
   <!-- Activity Charts -->
   <div class="grid-x grid-padding-x" id="activity-charts">
     <!-- Pull Requests/Commits -->
-    <div class="cell activity-charts-title">${contributionText}</div>
-    <div class="grid-x grid-padding-x cell medium-6">
-      <!-- AB Testing -->
+    <div class="cell activity-charts-title" v-show="contributionTypes.length > 1">Contributions by ${getContributionTypeDisplayName(contributionType)}</div>
+
+    <div class="grid-x grid-padding-x cell">
+      <!-- Categories -->
+      <!-- TODO: Calculate column widths based on number of categories -->
+      <div class="cell small-3"  v-for="(key, index) in Object.keys(contributions).sort()">
+        <div v-if="key !== 'total'" class="grid-x chart-container">
+          <div class="cell auto small-12">
+            <canvas v-bind:id="'activityChart' + index" width="50" height="100" style="border: 1px solid black;height: 100%;width: auto;"></canvas>
+          </div>
+        </div>
+        <div v-if="key !== 'total'" class="text-center capitalize">${key}</div>
+        <div v-if="key !== 'total'" class="text-center capitalize">${contributions[key]}</div>
+      </div>
+    </div>
+
+    <!-- <div class="grid-x grid-padding-x cell medium-6">
+      Category 1
       <div class="cell small-4">
         <div class="grid-x chart-container">
           <canvas id="activityChart0" width="50" height="100" style="border: 1px solid black;"></canvas>
         </div>
-        <div class="text-center">${contributions.testing}</div>
+        <div class="text-center">${contributions.category0}</div>
       </div>
-      <!-- Site Content -->
+      Category 2
       <div class="cell small-4">
         <div class="grid-x chart-container">
           <canvas id="activityChart1" width="50" height="100" style="border: 1px solid black;"></canvas>
         </div>
-        <div class="text-center">${contributions.site}</div>
+        <div class="text-center">${contributions.category1}</div>
       </div>
-      <!-- Email Content -->
+      Category 3
       <div class="cell small-4">
         <div class="grid-x chart-container">
           <canvas id="activityChart2" width="50" height="100" style="border: 1px solid black;"></canvas>
         </div>
-        <div class="text-center">${contributions.email}</div>
+        <div class="text-center">${contributions.category2}</div>
       </div>
-    </div>
+    </div> -->
     <!-- TODO: Activity Donut -->
   </div>
 
   <div class="grid-x grid-padding-x">
     <div class="cell">
-      <p><i>These figures are based solely on personal opinion and are purely estimations.</i></p>
+      <p><i>These figures are purely estimates.</i></p>
       <i>Last Updated: July 26, 2020</i>
     </div>
   </div>

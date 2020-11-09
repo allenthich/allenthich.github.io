@@ -1,6 +1,3 @@
-import './career/career.js'
-import { initBarCharts } from './career/barChart.js'
-
 /**
  * Initialize foundation scripts
  */
@@ -25,9 +22,4 @@ const preventSameHeaderRedirect = () => {
 $(document).ready(() => {
   initFoundation()
   preventSameHeaderRedirect()
-
-  // Check for career page
-  if (/\/career\//.test(window.location.pathname)) {
-    initBarCharts()
-  }
 });

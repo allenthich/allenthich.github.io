@@ -74,167 +74,125 @@
     "progression": {
       "overall": [
         {
-          "name": "Total AB tests written",
+          "name": "Total estimated A/B tests written",
           "value": 24
         },
         {
-          "name": "Total contributions",
+          "name": "Total estimated contributions",
           "value": 848
         },
         {
-          "name": "Total pull requests reviewed",
+          "name": "Total estimated pull requests reviewed",
           "value": 15
         }
       ],
-      "statistics": [
+      "contributions": [
         {
           "year": 2020,
-          "categories": [
-            {
-              "name": "pullRequest",
-              "verb": " pull requests merged",
-              "total": 13,
-              "types": [
-                {
-                  "name": "A/B Testing",
-                  "total": 7,
-                  "totalCommits": 135
-                },
-                {
-                  "name": "Site Content",
-                  "total": 6,
-                  "totalCommits": 62
-                },
-                {
-                  "name": "Email Content",
-                  "total": 0,
-                  "totalCommits": 0
-                }
-              ]
-            }
-          ],
-          "pullRequests": {
-            "name": "pullRequest",
-            "verb": " pull requests merged",
-            "total": 13,
+          "COMMIT": {
             "types": [
               {
-                "name": "testing",
-                "total": 7,
-                "totalCommits": 135
-              },
-              {
-                "name": "site",
-                "total": 6,
-                "totalCommits": 62
-              },
-              {
-                "name": "email",
-                "total": 0,
-                "totalCommits": 0
-              }
-            ]
-          },
-          "commits": {
-            "total": 373,
-            "types": [
-              {
-                "name": "testing",
+                "name": "A/B Testing",
                 "total": 190
               },
               {
-                "name": "site",
+                "name": "Site Content",
                 "total": 153
               },
               {
-                "name": "email",
+                "name": "Email Content",
                 "total": 30
               }
             ]
           },
-          "reviews": {
-            "total": 11,
+          "PULL_REQUEST": {
             "types": [
               {
-                "name": "testing",
-                "total": 5
+                "name": "A/B Testing",
+                "total": 7,
+                "totalCommits": 135
               },
               {
-                "name": "site",
-                "total": 6
+                "name": "Site Content",
+                "total": 6,
+                "totalCommits": 62
               },
               {
-                "name": "email",
-                "total": 0
+                "name": "Email Content",
+                "total": 0,
+                "totalCommits": 0
               }
             ]
           },
-          "activity": {
-            "pullRequests": 4,
-            "reviews": 2,
-            "commits": 94
+          "REVIEW": {
+            "types": [
+              {
+                "name": "A/B Testing",
+                "total": 5
+              },
+              {
+                "name": "Site Content",
+                "total": 6
+              },
+              {
+                "name": "Email Content",
+                "total": 0
+              }
+            ]
           }
         },
         {
           "year": 2019,
-          "pullRequests": {
-            "total": 15,
+          "COMMIT": {
             "types": [
               {
-                "name": "testing",
-                "total": 15,
-                "totalCommits": 200
-              },
-              {
-                "name": "site",
-                "total": 0,
-                "totalCommits": 0
-              },
-              {
-                "name": "email",
-                "total": 0,
-                "totalCommits": 0
-              }
-            ]
-          },
-          "commits": {
-            "total": 475,
-            "types": [
-              {
-                "name": "testing",
+                "name": "A/B Testing",
                 "total": 200
               },
               {
-                "name": "site",
+                "name": "Site Content",
                 "total": 39
               },
               {
-                "name": "email",
+                "name": "Email Content",
                 "total": 236
               }
             ]
           },
-          "reviews": {
-            "total": 4,
+          "PULL_REQUEST": {
             "types": [
               {
-                "name": "testing",
-                "total": 4
+                "name": "A/B Testing",
+                "total": 15,
+                "totalCommits": 200
               },
               {
-                "name": "site",
-                "total": 0
+                "name": "Site Content",
+                "total": 0,
+                "totalCommits": 0
               },
               {
-                "name": "email",
-                "total": 0
+                "name": "Email Content",
+                "total": 0,
+                "totalCommits": 0
               }
             ]
           },
-          "activity": {
-            "pullRequests": 4,
-            "reviews": 1,
-            "commits": 95
+          "REVIEW": {
+            "types": [
+              {
+                "name": "A/B Testing",
+                "total": 4
+              },
+              {
+                "name": "Site Content",
+                "total": 0
+              },
+              {
+                "name": "Email Content",
+                "total": 0
+              }
+            ]
           }
         }
       ]
@@ -262,7 +220,7 @@
     "contributions": [
       "Achieved proficiency using an XML/PHP based proprietary template language, ISL, to develop educational lessons",
       "Improved visual debugging and new hire onboarding by creating a syntax definition for ISL to use in Sublime Text",
-      "Automated manual updating of 26 hexadecimal color codes across 75+ lessons by writing a Shell script",
+      "Automated updating of 26 hexadecimal color codes across 75+ lessons by writing a Shell script",
       "Reduced an average of 5 defects while performing code reviews mindful of best practices, accessibility, and localization",
       "Drove critical decisions for content architects by rapidly prototyping design changes",
       "Resolved issues within day of discovery by directly communicating with quality control and translators",
@@ -313,113 +271,62 @@
           "value": 732
         }
       ],
-      "statistics": [
+      "contributions": [
         {
           "year": 2018,
-          "lessons": {
-            "total": 140,
+          "LESSON": {
             "types": [
               {
-                "name": "testing",
-                "total": 0,
-                "totalCommits": 0
-              }
-            ]
-          },
-          "issues": {
-            "total": 70,
-            "types": [
+                "name": "Education Lessons",
+                "total": 140
+              },
               {
-                "name": "testing",
+                "name": "Issues",
                 "total": 70
-              }
-            ]
-          },
-          "reviews": {
-            "total": 280,
-            "types": [
+              },
               {
-                "name": "testing",
+                "name": "Reviews",
                 "total": 280
               }
             ]
-          },
-          "activity": {
-            "lessons": 4,
-            "reviews": 2,
-            "issues": 94
           }
         },
         {
           "year": 2017,
-          "lessons": {
-            "total": 286,
+          "LESSON": {
             "types": [
               {
-                "name": "testing",
-                "total": 0,
-                "totalissues": 286
-              }
-            ]
-          },
-          "issues": {
-            "total": 91,
-            "types": [
+                "name": "Education Lessons",
+                "total": 286
+              },
               {
-                "name": "testing",
+                "name": "Issues",
                 "total": 91
-              }
-            ]
-          },
-          "reviews": {
-            "total": 312,
-            "types": [
+              },
               {
-                "name": "testing",
+                "name": "Reviews",
                 "total": 312
               }
             ]
-          },
-          "activity": {
-            "lessons": 4,
-            "reviews": 2,
-            "issues": 94
           }
         },
         {
           "year": 2016,
-          "lessons": {
-            "total": 168,
+          "LESSON": {
             "types": [
               {
-                "name": "testing",
-                "total": 7,
-                "totalissues": 168
-              }
-            ]
-          },
-          "issues": {
-            "total": 56,
-            "types": [
+                "name": "Education Lessons",
+                "total": 168
+              },
               {
-                "name": "testing",
+                "name": "Issues",
                 "total": 56
-              }
-            ]
-          },
-          "reviews": {
-            "total": 140,
-            "types": [
+              },
               {
-                "name": "testing",
+                "name": "Reviews",
                 "total": 140
               }
             ]
-          },
-          "activity": {
-            "lessons": 4,
-            "reviews": 2,
-            "issues": 94
           }
         }
       ]
@@ -492,18 +399,22 @@
       "overall": [
         {
           "name": "Total projects worked on",
-          "value": 0
-        },
-        {
-          "name": "Total ",
-          "value": 0
-        },
-        {
-          "name": "Total ",
-          "value": 0
+          "value": 2
         }
       ],
-      "statistics": []
+      "contributions": [
+        {
+          "year": 2015,
+          "PROJECT": {
+            "types": [
+              {
+                "name": "Projects",
+                "total": 2
+              }
+            ]
+          }
+        }
+      ]
     },
     "favoriteMemory": "A learning hub of eccentric characters fulfilling a shared endeavor. Another island workstation of intelligent and kind team members. We came there during our university free periods to learn and deliver."
   },
@@ -521,7 +432,7 @@
     "industry": "Computer Software",
     "department": "",
     "isInternship": true,
-    "timePeriod": "June 2016 - December 2018",
+    "timePeriod": "June 2014 - December 2015",
     "duration": "1 yr 1 mo",
     "role": "MEAN Stack Developer",
     "contributions": [
@@ -582,18 +493,33 @@
       "overall": [
         {
           "name": "Total projects worked on",
-          "value": 0
-        },
-        {
-          "name": "Total ",
-          "value": 0
-        },
-        {
-          "name": "Total ",
-          "value": 0
+          "value": 3
         }
       ],
-      "statistics": []
+      "contributions": [
+        {
+          "year": 2015,
+          "PROJECT": {
+            "types": [
+              {
+                "name": "Projects",
+                "total": 2
+              }
+            ]
+          }
+        },
+        {
+          "year": 2014,
+          "PROJECT": {
+            "types": [
+              {
+                "name": "Projects",
+                "total": 1
+              }
+            ]
+          }
+        }
+      ]
     },
     "favoriteMemory": "Bright sunny summer days. 5 developers compacted into a single room of a rustic house. Monitors propped on our single island workstation. AC on blast. Exciting curiosity."
   }

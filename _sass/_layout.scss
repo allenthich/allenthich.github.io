@@ -72,7 +72,7 @@
     background-image: linear-gradient(rgba(66, 66, 66, 1), rgba(66, 66, 66, 1));
     
     &.is-active {
-      animation:  0.25s ease-out 0s 1 setActiveHeader;
+      // animation:  0.25s ease-out 0s 1 setActiveHeader;
       background-size: 100% 100%;
       color: white;
       border-bottom: 2px solid rgba(66, 66, 66, 1);
@@ -151,4 +151,26 @@
   // width: 100px;
   height: 200px;
   max-height: 200px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+#chartjs-tooltip {
+  text-transform: capitalize;
+}
+
+.contribution-table, .usage-table, .statistics-table {
+  border: none;
+  width: 100%;
+
+  tbody, tr, td {
+    border: none;
+  }
+}
+
+#statistics-tabs {
+  border: none;
+  border-bottom: 1px solid #e6e6e6;
 }
