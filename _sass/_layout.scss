@@ -100,6 +100,13 @@
   font-family: "Open Sans";
   font-weight: bold;
   text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+@media screen and (max-width: 40em) {
+  .grid-padding-y > .cell + .cell {
+    padding-top: 0;
+  }
 }
 
 .progress-bar {
@@ -173,4 +180,23 @@
 #statistics-tabs {
   border: none;
   border-bottom: 1px solid #e6e6e6;
+}
+
+.hero {
+  height: 60vh;
+  background: 
+  linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.8)
+  ),
+  url(../img/WALK_BIG_SUR_CROP.jpeg);
+  // background-image: url(../img/IMG_8812.JPEG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.white {
+  color: white;
 }

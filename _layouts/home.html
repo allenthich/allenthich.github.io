@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{%- if page.title -%}
+<h1 class="page-heading">{{ page.title }}</h1>
+{%- endif -%}
+
+{{ content }}
+
+<div class="home">
+  <!-- Posts -->
+  {%- if site.posts.size > 0 -%}
+    <div class="wrapper">
+      <div class="cell">
+        <br />
+        <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
+        <!-- <ul class="post-list"> -->
+          {%- for post in site.posts -%}
+            <div class="card" style="width: 300px;">
+              <div class="card-divider" style="background: none; border-bottom: 1px solid #e6e6e6;">
+                <h4>
+                  <!-- <a class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title | escape }}
+                  </a> -->
+                  {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                  <span class="post-meta" style="color: inherit;">{{ post.date | date: date_format }}</span>
+                </h4>
+              </div>
+              <div class="card-section">
+                <!-- {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <span class="post-meta">{{ post.date | date: date_format }}</span> -->
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </div>
+            </div>
+          <!-- <li>
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+            <span class="post-meta">{{ post.date | date: date_format }}</span>
+            <h3>
+              <a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+              </a>
+            </h3>
+            {%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}
+          </li> -->
+          {%- endfor -%}
+        <!-- </ul> -->
+      </div>
+    </div>
+  {%- endif -%}
+</div>
