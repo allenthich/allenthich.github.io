@@ -7,6 +7,25 @@
   padding-left: 0;
 }
 
-.site-header {
-  display: none;
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero > .site-header {
+  border-bottom: none;
+
+  .menu > li > a {
+    color: white;
+  }
+}
+
+// Mobile
+.title-bar {
+  background: inherit;
+
+  .title-bar-title .site-title {
+    color: white;
+  }
 }

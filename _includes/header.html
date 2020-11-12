@@ -3,15 +3,64 @@
 {% endcapture %}
 
 <header class="site-header">
-  <div class="title-bar align-justify" data-responsive-toggle="topnav-menu" data-hide-for="medium" style="display: none;">
-    <div class="title-bar-title">
-      {{ home_anchor }}
+  <div class="off-canvas-wrapper">
+    <div class="title-bar show-for-small-only">
+      <div class="title-bar-left align-justify">
+        <div class="title-bar-title">
+          {{ home_anchor }}
+        </div>
+      </div>
+      <div class="title-bar-right align-justify">
+        <button class="menu-icon" type="button" data-open="offCanvasRight" aria-expanded="false" aria-controls="offCanvasRight"></button>
+      </div>
     </div>
-    <button class="menu-icon" type="button" data-toggle="topnav-menu"></button>
-  </div>
+
+    <div class="top-bar hide-for-small-only" id="topnav-menu" data-hide-for="small">
+      <div class="top-bar-left">
+        <ul class="menu grid-x align-center" data-dropdown-menu>
+          <li class="home-anchor hide-for-small-only">
+            {{ home_anchor }}
+          </li>
+          {%- assign default_paths = site.pages | map: "path" -%}
+          {%- assign page_paths = site.header_pages | default: default_paths -%}
+          {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
   
-  <div class="top-bar" id="topnav-menu">
-    <div class="top-bar-left">
+          {%- if titles_size > 0 -%}
+            {% assign currentIndex = 0 %}
+            
+            {%- for path in page_paths -%}
+              {%- assign my_page = site.pages | where: "order", currentIndex | first -%}
+              {%- if my_page.title -%}
+                {%- assign title = my_page.title | downcase -%}
+  
+                {%- comment -%} Set the grid sizing of headers {%- endcomment -%}
+                {%- assign med_cell_sz = 2 -%}
+                {% if title == "home" %}{% assign med_cell_sz = 3 %}{% endif %}
+  
+                {%- comment -%} Set the active header {%- endcomment -%}
+                {%- assign page_title = page.title | downcase -%}
+                {%- assign is_active_title = "" -%}
+                {% if title == page_title %}{% assign is_active_title = "active" %}{% endif %}
+  
+                <li class="cell small-12 medium-{{ med_cell_sz }} {{ is_active_title }}">
+                  <a class="page-link text-center nav-{{ title }}" href="{{ my_page.url | relative_url }}">
+                    <span class="cell nowrap">
+                      {{- my_page.title | upcase -}}
+                    </span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {% assign currentIndex = currentIndex | plus: 1 %}
+            {%- endfor -%}
+          {%- endif -%}
+        </ul>
+      </div>
+    </div>
+
+    <div class="off-canvas position-right" id="offCanvasRight"  data-position="right" aria-hidden="true" data-off-canvas>
+      <button class="close-button" aria-label="Close menu" type="button" data-close="">
+        <span aria-hidden="true">×</span>
+      </button>
       <ul class="menu grid-x align-center" data-dropdown-menu>
         <li class="home-anchor hide-for-small-only">
           {{ home_anchor }}

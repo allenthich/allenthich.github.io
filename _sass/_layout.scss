@@ -193,10 +193,21 @@
   url(../img/WALK_BIG_SUR_CROP.jpeg);
   // background-image: url(../img/IMG_8812.JPEG);
   background-position: center;
+  background-position-y: 35%;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 1920px) {
+  .hero {
+    background-position-y: 30%;
+  }
+}
+
 .white {
   color: white;
+}
+
+.nowrap {
+  white-space: nowrap;
 }

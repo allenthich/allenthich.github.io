@@ -4,8 +4,11 @@
   {%- include head.html -%}
 
   <body>
-    {%- include header.html -%}
-    <main class="page-content" aria-label="Content">
+    {%- if page.title -%}
+      {%- include header.html -%}
+    {%- endif -%}
+
+    <main class="page-content" aria-label="Content" data-off-canvas-content>
       {{ content }}
     </main>
 
