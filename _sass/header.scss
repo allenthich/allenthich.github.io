@@ -25,6 +25,10 @@ div.separator-bar {
   margin-top: 8px;
 }
 
+.js-off-canvas-overlay {
+  background: rgba(0, 0, 0, 0.25);
+}
+
 // Resume Desktop Dropdown
 #resume-action-dropdown {
   box-shadow: rgba(10, 30, 65, 0.25) 0px 4px 8px -2px, rgba(10, 30, 65, 0.30) 0px 0px 1px;
@@ -116,4 +120,24 @@ ul > li.nav-resume {
   .title-bar-left .site-title {
     padding-right: 0;
   }
+}
+
+.off-canvas {
+  background: white;
+}
+
+.off-canvas.position-right {
+  transition: transform 0.25s cubic-bezier(0.45, 0.01, 0.45, 1);
+}
+
+.off-canvas ul.menu > li.cell.small-12.medium-2 {
+  width: 100%;
+
+  a {
+    color: black;
+  }
+}
+
+.off-canvas-wrapper {
+  overflow: inherit;
 }
