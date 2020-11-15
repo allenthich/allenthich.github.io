@@ -19,6 +19,21 @@
   .menu > li > a {
     color: white;
   }
+  .resume-button {
+    color: white;
+    border-color: white;
+
+    &:hover,
+    &:focus {
+      border-color: white;
+      color: white;
+    }
+  }
+}
+
+.button.dropdown.hollow::after,
+.button.dropdown.clear::after {
+  border-top-color: white;
 }
 
 // Mobile
@@ -27,5 +42,17 @@
 
   .title-bar-title .site-title {
     color: white;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title-bar-left .site-title {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .hero > .site-header .menu > li > a.page-link {
+    color: black;
   }
 }

@@ -21,11 +21,16 @@ a:visited {
 //   }
 // }
 
+ul.menu {
+  padding: 0.5rem;
+  height: 72px;
+}
+
 .menu > li {
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;         /* Opera/IE 8+ */
-  max-height: 55px;
+  max-height: 56px;
   // border-bottom: 1px solid white;
 
   > a {
@@ -39,8 +44,9 @@ a:visited {
     }
   }
 
-  &.home-anchor {
-    margin-right: auto;
+  &.home-anchor > .site-title {
+    padding: 0;
+    line-height: 54px;
   }
 
 //   &:not(.home-anchor) {

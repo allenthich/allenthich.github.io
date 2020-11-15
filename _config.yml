@@ -22,10 +22,13 @@ title: Allen Thich
 initials: AT
 email: allenthich@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  I like code, surprise rabbit hole errors, and Sonoma Snacks' vegetable crisps.
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://allenthich.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: allenthich/allenthich.github.io
+
+resume_updated: November 13, 2020
+resume_link: https://allenthich.github.io/assets/downloads/Allen.Thich.Resume.pdf
 
 # Build settings
 theme: minima
@@ -55,6 +58,7 @@ minima:
     # googleplus: +jekyll
     # microdotblog: jekyll
     # keybase: jekyll
+    rss: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

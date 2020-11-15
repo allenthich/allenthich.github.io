@@ -5,13 +5,13 @@
 
     <div class="footer-col-wrapper">
       <div class="footer-col">
-        <p class="feed-subscribe">
+        <!-- <p class="feed-subscribe">
           <a href="{{ 'feed.xml' | relative_url }}">
             <svg class="svg-icon orange">
               <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
             </svg><span>Subscribe</span>
           </a>
-        </p>
+        </p> -->
       {%- if site.author %}
         <ul class="contact-list">
           {% if site.author.name -%}
@@ -23,10 +23,10 @@
         </ul>
       {%- endif %}
       
-      <!-- {% if site.github.is_project_page %}
+      {% if site.github.is_project_page %}
       <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
       {% endif %}
-      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p> -->
+      <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/jekyll/minima">jekyll/minima</a></small></p>
 
       </div>
       <div class="footer-col">

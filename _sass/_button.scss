@@ -1,0 +1,13 @@
+.button.hollow {
+  border: 1px solid black;
+  color: black;
+}
+
+.button.dropdown::after {
+  // border: inset 0.42em;
+}
+
+.button.dropdown.hollow::after,
+.button.dropdown.clear::after {
+  border-top-color: black;
+}

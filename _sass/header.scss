@@ -5,3 +5,93 @@
 .site-header {
   border-top: none;
 }
+
+.separator-bar {
+  border-right: 1px solid white;
+  padding: 0.5em;
+  margin-top: 0.25em;
+
+}
+
+div.separator-bar {
+  display: inline;
+  padding: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.dropdown-pane.is-open {
+  max-width: 12em;
+  left: auto !important;
+  margin-top: 8px;
+}
+
+// Resume Desktop Dropdown
+#resume-action-dropdown {
+  box-shadow: rgba(10, 30, 65, 0.25) 0px 4px 8px -2px, rgba(10, 30, 65, 0.30) 0px 0px 1px;
+
+  .block {
+    line-height: normal;
+  }
+  a.block {
+    margin: 1em 0;
+  }
+
+  .post-meta {
+    padding-left: 1em;
+
+    &:first-of-type {
+      border-top: 1px solid #e6e6e6;
+      padding-top: 1rem;
+    }
+  }
+
+  .icon-wrapper {
+    display: inline-flex;
+    width: 2em;
+
+    i {
+      margin: auto;
+    }
+  }
+}
+
+// Resume Mobile
+ul > li.nav-resume {
+  max-height: none;
+
+  span.page-link {
+    color: black;
+    cursor: default;
+    padding: 0.7rem 1rem;
+    padding-bottom: 0;
+  }
+
+  .nav-resume-actions {
+    .block {
+      line-height: normal;
+    }
+
+    a.page-link {
+      padding-left: 1.5em;
+    }
+  
+    .post-meta {
+      padding-left: 2em;
+  
+      &:first-of-type {
+        border-top: 1px solid #e6e6e6;
+        padding-top: 1rem;
+      }
+    }
+  
+    .icon-wrapper {
+      display: inline-flex;
+      width: 1.75em;
+  
+      i {
+        margin: auto;
+      }
+    }
+  }
+}

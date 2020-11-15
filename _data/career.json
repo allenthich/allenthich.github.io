@@ -19,9 +19,9 @@
     "contributions": [
       "Develop A/B test experiences that range from simple UI changes to the additions of new features",
       "Translate wireframe designs into responsive site and email web content",
-      "Integrate unit testing framework Jest into the Gulp build system to reduce the number of bugs",
+      "Integrate unit testing framework Jest into the Gulp build system to easily identify defects",
       "Refactor build system entry point and CLI interaction to scale for the creation of new tasks",
-      "Build XLSX to JSON data ingestion workflow into the build system to minimize latency between teams"
+      "Build XLSX to JSON data ingestion workflow into the build system to reduce friction between teams"
     ],
     "languages": [
       {
@@ -224,7 +224,7 @@
       "Reduced an average of 5 defects while performing code reviews mindful of best practices, accessibility, and localization",
       "Drove critical decisions for content architects by rapidly prototyping design changes",
       "Resolved issues within day of discovery by directly communicating with quality control and translators",
-      "Created global utility functions to enable code reuse and style consistency"
+      "Enabled code reuse and style consistency through the creation of global utility functions"
     ],
     "languages": [
       {

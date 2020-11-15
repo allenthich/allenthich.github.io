@@ -16,10 +16,54 @@ const preventSameHeaderRedirect = () => {
   })
 }
 
+const setClipboard = text => {
+  const tempInput = document.createElement("input");
+  tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+  tempInput.value = text;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+}
+
+const bindResumeClipboardAction = () => {
+  $(document).on('click', '.resume-copy-action', () => {
+    setClipboard($('.resume-copy-action').data('clipboard'))
+  })
+}
+
+const logFriendlyDoge = () => setTimeout(() => {
+  console.log(`
+  Why hello curious!
+
+    ░░░░░░░▄░░░░░░░░░░░░░░▄░░░░
+  ░░░░░░░░▌▒█░░░░░░░░░░░▄▀▒▌░░░
+  ░░░░░░░░▌▒▒█░░░░░░░░▄▀▒▒▒▐░░░
+  ░░░░░░░▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐░░░
+  ░░░░░▄▄▀▒░▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐░░░
+  ░░░▄▀▒▒▒░░░▒▒▒░░░▒▒▒▀██▀▒▌░░░ 
+  ░░▐▒▒▒▄▄▒▒▒▒░░░▒▒▒▒▒▒▒▀▄▒▒▌░░
+  ░░▌░░▌█▀▒▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐░░
+  ░▐░░░▒▒▒▒▒▒▒▒▌██▀▒▒░░░▒▒▒▀▄▌░
+  ░▌░▒▄██▄▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒▒▌░
+  ▀▒▀▐▄█▄█▌▄░▀▒▒░░░░░░░░░░▒▒▒▐░
+  ▐▒▒▐▀▐▀▒░▄▄▒▄▒▒▒▒▒▒░▒░▒░▒▒▒▒▌
+  ▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒▒▒░▒░▒░▒▒▐░
+  ░▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒░▒░▒░▒░▒▒▒▌░
+  ░▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▒▄▒▒▐░░
+  ░░▀▄▒▒▒▒▒▒▒▒▒▒▒░▒░▒░▒▄▒▒▒▒▌░░
+  ░░░░▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀░░░
+  ░░░░░░▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀░░░░░
+  ░░░░░░░░░▒▒▒▒▒▒▒▒▒▒▀▀░░░░░░░░
+  `)
+}, 5000)
+
 /**
  * Main execution
  */
 $(document).ready(() => {
   initFoundation()
   preventSameHeaderRedirect()
+  bindResumeClipboardAction()
+  logFriendlyDoge()
 });

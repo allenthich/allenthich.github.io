@@ -5,4 +5,4 @@ permalink: /about/
 order: 0
 ---
 
-{% include about/index.html %}
+{% include about.html %}

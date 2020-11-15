@@ -2,101 +2,100 @@
   <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{- site.initials | escape -}}</a>
 {% endcapture %}
 
+<!-- Generate top navigation category list items -->
+{% capture top_navigation_categories %}
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+
+  {%- if titles_size > 0 -%}
+    {% assign currentIndex = 0 %}
+    
+    {%- for path in page_paths -%}
+      {%- assign my_page = site.pages | where: "order", currentIndex | first -%}
+      {%- if my_page.title -%}
+        {%- assign title = my_page.title | downcase -%}
+
+        {%- comment -%} Set the grid sizing of headers {%- endcomment -%}
+        {%- assign med_cell_sz = 2 -%}
+        {% if title == "home" %}{% assign med_cell_sz = 3 %}{% endif %}
+
+        {%- comment -%} Set the active header {%- endcomment -%}
+        {%- assign page_title = page.title | downcase -%}
+        {%- assign is_active_title = "" -%}
+        {% if title == page_title %}{% assign is_active_title = "active" %}{% endif %}
+
+        <li class="cell small-12 medium-{{ med_cell_sz }} {{ is_active_title }}">
+          <a class="page-link nav-{{ title }}" href="{{ my_page.url | relative_url }}">
+            <span class="cell nowrap">
+              {{- my_page.title | upcase -}}
+            </span>
+          </a>
+        </li>
+      {%- endif -%}
+      {% assign currentIndex = currentIndex | plus: 1 %}
+    {%- endfor -%}
+  {%- endif -%}
+{% endcapture %}
+
+<!-- Resume Actions -->
+{% capture resume_actions %}
+  <a href="/assets/downloads/Allen.Thich.Resume.pdf" class="clear block page-link"><span class="icon-wrapper"><i class="fi-eye"></i></span>View</a>
+  <a href="/assets/downloads/Allen.Thich.Resume.pdf" class="clear block page-link" download><span class="icon-wrapper"><i class="fi-download"></i></span>Download</a>
+  <a data-clipboard="{{ site.resume_link }}" class="clear block page-link resume-copy-action"><span class="icon-wrapper"><i class="fi-clipboard"></i></span>Copy link</a>
+  <span class="post-meta block">Last updated:</span>
+  <span class="post-meta block">{{ site.resume_updated }}</span>  
+{% endcapture %}
+
 <header class="site-header">
   <div class="off-canvas-wrapper">
+    <!-- Desktop/Tablet -->
+    <div class="top-bar hide-for-small-only" id="topnav-menu" data-hide-for="small">
+      <div class="top-bar-left grid-x">
+        <ul class="menu grid-x cell medium-9 text-center" data-dropdown-menu>
+          <li class="home-anchor hide-for-small-only">{{ home_anchor }}</li>
+          <li class="separator-bar"></li>
+          {{ top_navigation_categories }}
+        </ul>
+        <!-- Desktop Resume Actions -->
+        <div class="cell medium-3 align-self-bottom">
+          <div class="button-group no-gaps align-right mr1em">
+            <button class="dropdown hollow button resume-button" data-toggle="resume-action-dropdown">Resume</button >
+            <div class="dropdown-pane" id="resume-action-dropdown" data-dropdown data-auto-focus="true" data-close-on-click="true" data-allow-overlap="true" data-allow-bottom-overlap="false" data-position="bottom" data-alignment="right">
+              <div>
+                {{ resume_actions }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Top Navigation Drawer -->
     <div class="title-bar show-for-small-only">
       <div class="title-bar-left align-justify">
         <div class="title-bar-title">
           {{ home_anchor }}
         </div>
+        <div class="separator-bar"></div>
       </div>
       <div class="title-bar-right align-justify">
         <button class="menu-icon" type="button" data-open="offCanvasRight" aria-expanded="false" aria-controls="offCanvasRight"></button>
       </div>
     </div>
-
-    <div class="top-bar hide-for-small-only" id="topnav-menu" data-hide-for="small">
-      <div class="top-bar-left">
-        <ul class="menu grid-x align-center" data-dropdown-menu>
-          <li class="home-anchor hide-for-small-only">
-            {{ home_anchor }}
-          </li>
-          {%- assign default_paths = site.pages | map: "path" -%}
-          {%- assign page_paths = site.header_pages | default: default_paths -%}
-          {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-  
-          {%- if titles_size > 0 -%}
-            {% assign currentIndex = 0 %}
-            
-            {%- for path in page_paths -%}
-              {%- assign my_page = site.pages | where: "order", currentIndex | first -%}
-              {%- if my_page.title -%}
-                {%- assign title = my_page.title | downcase -%}
-  
-                {%- comment -%} Set the grid sizing of headers {%- endcomment -%}
-                {%- assign med_cell_sz = 2 -%}
-                {% if title == "home" %}{% assign med_cell_sz = 3 %}{% endif %}
-  
-                {%- comment -%} Set the active header {%- endcomment -%}
-                {%- assign page_title = page.title | downcase -%}
-                {%- assign is_active_title = "" -%}
-                {% if title == page_title %}{% assign is_active_title = "active" %}{% endif %}
-  
-                <li class="cell small-12 medium-{{ med_cell_sz }} {{ is_active_title }}">
-                  <a class="page-link text-center nav-{{ title }}" href="{{ my_page.url | relative_url }}">
-                    <span class="cell nowrap">
-                      {{- my_page.title | upcase -}}
-                    </span>
-                  </a>
-                </li>
-              {%- endif -%}
-              {% assign currentIndex = currentIndex | plus: 1 %}
-            {%- endfor -%}
-          {%- endif -%}
-        </ul>
-      </div>
-    </div>
-
     <div class="off-canvas position-right" id="offCanvasRight"  data-position="right" aria-hidden="true" data-off-canvas>
       <button class="close-button" aria-label="Close menu" type="button" data-close="">
         <span aria-hidden="true">×</span>
       </button>
-      <ul class="menu grid-x align-center" data-dropdown-menu>
-        <li class="home-anchor hide-for-small-only">
-          {{ home_anchor }}
+      <ul class="menu grid-x" data-dropdown-menu>
+        <li class="home-anchor hide-for-small-only">{{ home_anchor }}</li>
+        {{ top_navigation_categories }}
+        <li class="nav-resume">
+          <span class="page-link block" href="/assets/downloads/Allen.Thich.Resume.pdf">RESUME</span>
+          <div class="nav-resume-actions">
+            {{ resume_actions }}
+          </div>
         </li>
-        {%- assign default_paths = site.pages | map: "path" -%}
-        {%- assign page_paths = site.header_pages | default: default_paths -%}
-        {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-
-        {%- if titles_size > 0 -%}
-          {% assign currentIndex = 0 %}
-          
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "order", currentIndex | first -%}
-            {%- if my_page.title -%}
-              {%- assign title = my_page.title | downcase -%}
-
-              {%- comment -%} Set the grid sizing of headers {%- endcomment -%}
-              {%- assign med_cell_sz = 2 -%}
-              {% if title == "home" %}{% assign med_cell_sz = 3 %}{% endif %}
-
-              {%- comment -%} Set the active header {%- endcomment -%}
-              {%- assign page_title = page.title | downcase -%}
-              {%- assign is_active_title = "" -%}
-              {% if title == page_title %}{% assign is_active_title = "active" %}{% endif %}
-
-              <li class="cell small-12 medium-{{ med_cell_sz }} {{ is_active_title }}">
-                <a class="page-link text-center nav-{{ title }}" href="{{ my_page.url | relative_url }}">
-                  <span class="cell">
-                    {{- my_page.title | upcase -}}
-                  </span>
-                </a>
-              </li>
-            {%- endif -%}
-            {% assign currentIndex = currentIndex | plus: 1 %}
-          {%- endfor -%}
-        {%- endif -%}
       </ul>
     </div>
     <div class="top-bar-right lang-tgl">
