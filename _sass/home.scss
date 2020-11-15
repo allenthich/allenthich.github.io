@@ -37,17 +37,23 @@
 }
 
 // Mobile
+.separator-bar {
+  border-right: 1px solid white;
+  padding: 0.5em;
+  margin-top: 0.25em;
+}
+
 .title-bar {
   background: inherit;
 
   .title-bar-title .site-title {
     color: white;
   }
-}
 
-@media screen and (max-width: 600px) {
-  .title-bar-left .site-title {
-    padding-right: 0;
+  .menu-icon::after {
+    background: white;
+    -webkit-box-shadow: 0 7px white, 0 14px 0 white;
+    box-shadow: 0 7px 0 white, 0 14px 0 white;
   }
 }
 

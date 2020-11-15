@@ -246,6 +246,10 @@
     color: black;
   }
 
+  .off-canvas {
+    background: white;
+  }
+
   .off-canvas.position-right {
     transition: transform 0.25s cubic-bezier(0.45, 0.01, 0.45, 1);
   }
