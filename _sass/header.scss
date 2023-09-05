@@ -43,9 +43,9 @@ div.separator-bar {
   .post-meta {
     padding-left: 1em;
 
-    &:first-of-type {
-      border-top: 1px solid #e6e6e6;
-      padding-top: 1rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid #e6e6e6;
+      padding: 0.5rem 0;
     }
   }
 
@@ -88,9 +88,10 @@ ul > li.nav-resume {
     .post-meta {
       padding-left: 2em;
   
-      &:first-of-type {
-        border-top: 1px solid #e6e6e6;
+      &:not(:last-child) {
+        border-bottom: 1px solid #e6e6e6;
         padding-top: 1rem;
+        padding-bottom: 1rem;
       }
     }
   
