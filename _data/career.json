@@ -13,15 +13,15 @@
     "industry": "Apparel & Fashion",
     "department": "E-commerce",
     "isInternship": false,
-    "timePeriod": "July 2019 - Present",
-    "duration": "1 yr 1 mo",
+    "timePeriod": "July 2019 - July 2021",
+    "duration": "2 yr",
     "role": "Front End Web Developer",
     "contributions": [
-      "Develop A/B test experiences that range from simple UI changes to the additions of new features",
-      "Translate wireframe designs into responsive site and email web content",
-      "Integrate unit testing framework Jest into the Gulp build system to easily identify defects",
-      "Refactor build system entry point and CLI interaction to scale for the creation of new tasks",
-      "Build XLSX to JSON data ingestion workflow into the build system to reduce friction between teams"
+      "Created, deployed, and maintained over 70+ A/B tests including UI changes, experimental features, and API integrations ",
+      "Translated wireframe designs into responsive site and email web content while ensuring accessibility and device compatibility",
+      "Integrated unit testing framework Jest into the Gulp build system to support build system enhancements",
+      "Refactored build system CLI interaction to scale for agnostic task creation",
+      "Built XLSX to JSON data ingestion workflow into the build system as a Gulp task to reduce friction between teams"
     ],
     "languages": [
       {
@@ -75,7 +75,7 @@
       "overall": [
         {
           "name": "Total estimated A/B tests written",
-          "value": 24
+          "value": 78
         },
         {
           "name": "Total estimated contributions",
@@ -218,9 +218,9 @@
     "duration": "2 yrs 7 mos",
     "role": "Content Programmer",
     "contributions": [
-      "Achieved proficiency using an XML/PHP based proprietary template language, ISL, to develop educational lessons",
-      "Improved visual debugging and new hire onboarding by creating a syntax definition for ISL to use in Sublime Text",
-      "Automated updating of 26 hexadecimal color codes across 75+ lessons by writing a Shell script",
+      "Achieved proficiency using an XML/PHP based proprietary scripting language, ISL, to develop over 500+ educational lessons",
+      "Improved visual debugging and developer onboarding by creating a syntax definition for ISL to use in Sublime Text",
+      "Automated updating 26 hexadecimal color codes across 75+ lessons by writing a Shell script that also pushed to source control",
       "Reduced an average of 5 defects while performing code reviews mindful of best practices, accessibility, and localization",
       "Drove critical decisions for content architects by rapidly prototyping design changes",
       "Resolved issues within day of discovery by directly communicating with quality control and translators",
@@ -437,7 +437,7 @@
     "role": "MEAN Stack Developer",
     "contributions": [
       "Built a RESTful API using the MEAN stack and successfully integrated with the client's iOS app",
-      "Created responsive desktop and mobile web pages using the Bootstrap 3 and Less.js libraries",
+      "Engaged in pair programming to create responsive desktop and mobile web pages using the Bootstrap 3 and Less.js libraries",
       "Implemented an efficient schedule availability algorithm utilizing the Google Calendar API"
     ],
     "languages": [
