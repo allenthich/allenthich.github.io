@@ -42,13 +42,13 @@
 {% capture resume_actions %}
   <div>
     <span class="post-meta block">English</span>
-    <a href="/assets/downloads/AllenThich.Resume.pdf" class="clear block page-link"><span class="icon-wrapper"><i class="fi-eye"></i></span>View</a>
-    <a href="/assets/downloads/AllenThich.Resume.pdf" class="clear block page-link" download><span class="icon-wrapper"><i class="fi-download"></i></span>Download</a>
+    <a href="{{ site.resume_fname_en | prepend: '/assets/downloads/' }}" class="clear block page-link"><span class="icon-wrapper"><i class="fi-eye"></i></span>View</a>
+    <a href="{{ site.resume_fname_en | prepend: '/assets/downloads/' }}" class="clear block page-link" download><span class="icon-wrapper"><i class="fi-download"></i></span>Download</a>
   </div>
   <div>
     <span class="post-meta block">日本語</span>  
-    <a href="/assets/downloads/［日本語］ティッチ・アレン.職務経歴書.pdf" class="clear block page-link"><span class="icon-wrapper"><i class="fi-eye"></i></span>見る</a>
-    <a href="/assets/downloads/［日本語］ティッチ・アレン.職務経歴書.pdf" class="clear block page-link" download><span class="icon-wrapper"><i class="fi-download"></i></span>ダウンロード</a>
+    <a href="{{ site.resume_fname_jp | prepend: '/assets/downloads/' }}" class="clear block page-link"><span class="icon-wrapper"><i class="fi-eye"></i></span>見る</a>
+    <a href="{{ site.resume_fname_jp | prepend: '/assets/downloads/' }}" class="clear block page-link" download><span class="icon-wrapper"><i class="fi-download"></i></span>ダウンロード</a>
   </div>
   <!-- <a data-clipboard="{{ site.resume_link_en }}" class="clear block page-link resume-copy-action"><span class="icon-wrapper"><i class="fi-clipboard"></i></span>Copy EN Resume link</a> -->
   <!-- <a data-clipboard="{{ site.resume_link_jp }}" class="clear block page-link resume-copy-action"><span class="icon-wrapper"><i class="fi-clipboard"></i></span>Copy JP Resume link</a> -->
@@ -99,7 +99,7 @@
         <li class="home-anchor hide-for-small-only">{{ home_anchor }}</li>
         {{ top_navigation_categories }}
         <li class="nav-resume">
-          <span class="page-link block" href="/assets/downloads/Allen.Thich.Resume.pdf">RESUME</span>
+          <span class="page-link block" href="{{ site.resume_fname_en | prepend: '/assets/downloads/' }}">RESUME</span>
           <div class="nav-resume-actions">
             {{ resume_actions }}
           </div>

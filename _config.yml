@@ -27,9 +27,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://allenthich.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: allenthich/allenthich.github.io
 
-resume_updated: September 5, 2023
-resume_link_en: https://allenthich.github.io/assets/downloads/Allen.Thich.Resume.pdf
-resume_link_jp: https://allenthich.github.io/assets/downloads//assets/downloads/［日本語］ティッチ・アレン.職務経歴書.pdf
+resume_updated: September 23, 2023
+resume_fname_en: Thich_Allen.Resume.pdf
+resume_fname_jp: ［日本語］Thich_Allen.職務経歴書.pdf
+resume_link_en: https://allenthich.github.io/assets/downloads/Thich_Allen.Resume.pdf
+resume_link_jp: https://allenthich.github.io/assets/downloads/［日本語］Thich_Allen.職務経歴書.pdf
 
 # Build settings
 theme: minima
